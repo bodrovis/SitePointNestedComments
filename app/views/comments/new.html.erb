@@ -1,0 +1,7 @@
+<h1>New comment</h1>
+
+<% if @comment.parent %>
+  <%= render 'comment', comment: @comment.parent, from_reply_form: true %>
+<% end %>
+
+<%= render 'form' %>

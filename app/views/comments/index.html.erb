@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Join the discussion</h1>
+    <p>Click the button below to start a new thread or post a reply to an existing one</p>
+    <p>
+      <%= link_to 'Add new topic', new_comment_path, class: 'btn btn-primary btn-lg' %>
+    </p>
+  </div>
+</div>
+<%# @comments.inspect.to_yaml%>
+<%= comments_tree_for @comments %>
+<%# render @comments %>

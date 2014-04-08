@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NestedComments</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <%= value %>
+    </div>
+  <% end %>
+</div>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <p class="text-muted">Created by <a href="http://radiant-wind.com" target="_blank">Radiant Wind</a></p>
+  </div>
+</div>
+
+</body>
+</html>

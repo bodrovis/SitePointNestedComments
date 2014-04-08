@@ -1,0 +1,8 @@
+@import 'bootstrap';
+@import 'bootstrap/theme';
+@import 'footer.css.scss';
+
+.replies {margin-left: 50px;}
+
+/* 5 levels nesting */
+.replies .replies .replies .replies .replies {margin-left: 0;}
