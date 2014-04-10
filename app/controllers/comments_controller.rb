@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
   end
 
   def create
-    if params[:comment][:parent_id]
+    if params[:comment][:parent_id].to_i > 0
       parent = Comment.find_by_id(params[:comment].delete(:parent_id))
       @comment = parent.children.build(comment_params)
     else
@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
     end
 
     if @comment.save
-      flash[:success] = 'Your comment was succesfully added!'
+      flash[:success] = 'Your comment was successfully added!'
       redirect_to root_url
     else
       render 'new'

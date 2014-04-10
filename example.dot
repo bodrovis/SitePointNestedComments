@@ -1,0 +1,15 @@
+digraph G {
+  7 [label="Hi all!"]
+  7 -> 11
+  11 [label="wazzup?"]
+  7 -> 9
+  9 [label="How are you? :))"]
+  7 -> 8
+  8 [label="yo man!"]
+  11 -> 13
+  13 [label="everything is cool!"]
+  8 -> 10
+  10 [label="hey-ho!"]
+  10 -> 12
+  12 [label="Nice to meet ya!"]
+}
