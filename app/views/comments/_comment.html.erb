@@ -12,6 +12,6 @@
     <% if comment.leaf? %>
       <small class="text-muted">There are no replies yet - be the first one to reply!</small>
     <% end %>
-    <p><%= link_to 'reply', new_comment_path + "?parent_id=#{comment.id}" %></p>
+    <p><%= link_to 'reply', new_comment_path(comment.id) %></p>
   <% end %>
 </div>
