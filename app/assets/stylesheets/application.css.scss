@@ -1,7 +1,9 @@
-@import 'auth/*.png';
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 @import 'bootstrap/theme';
 @import 'footer.css.scss';
+
+$icons: sprite-map("auth/*.png");
 
 .replies {margin-left: 50px;}
 
@@ -11,5 +13,5 @@
 .test {
   width: 32px;
   height: 32px;
-  @include auth-sprite(facebook);
+  background: sprite($icons, facebook);
 }

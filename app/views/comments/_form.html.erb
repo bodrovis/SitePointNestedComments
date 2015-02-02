@@ -28,5 +28,9 @@
     <%= f.text_area :body, class: 'form-control', required: true %>
   </div>
 
+  <div class="form-group">
+    <%= recaptcha_tags %>
+  </div>
+
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>
