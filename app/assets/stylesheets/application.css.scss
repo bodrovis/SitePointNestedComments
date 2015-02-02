@@ -1,8 +1,17 @@
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 @import 'bootstrap/theme';
 @import 'footer.css.scss';
+
+$icons: sprite-map("auth/*.png");
 
 .replies {margin-left: 50px;}
 
 /* 5 levels nesting */
 .replies .replies .replies .replies .replies {margin-left: 0;}
+
+.test {
+  width: 32px;
+  height: 32px;
+  background: sprite($icons, facebook);
+}
